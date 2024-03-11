@@ -1,0 +1,113 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+
+.round{
+    border-radius: 7px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+
+/* For WebKit browsers (e.g. Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* For Firefox */
+  /* Note: Firefox currently only supports styling the scrollbar thumb */
+  /* You can use scrollbar-color property to change the thumb and track color in Firefox */
+  /* Example:
+     scrollbar-color: #555 #333;
+  */
+  
+  /* For Internet Explorer */
+  /* Note: IE doesn't support customizing scrollbar styles */
+  
+.songinfo, .songtime{
+    color: black;
+    padding: 0 12px;
+}
+
+@media (max-width:1360px) {
+    .left{
+        background-color: red;
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 370px;
+        background-color: black;
+        padding: 0;
+    }
+
+    .left .close{
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+    }
+    .right{
+        width: 100vw;
+        margin: 0;
+    }
+    .playbar{
+        width: calc(100% - 75px);
+    }
+
+    .seekbar{
+        width: calc(100% - 38px);
+    }
+    .hamburger{
+        display: block;
+    }
+    .close{
+        display: block;
+    }
+    .card{
+        width: 55vw;
+    }
+    .info div{
+        word-break: break-all;
+    }
+    .cardContainer{
+        margin: 0;
+        justify-content: center;
+        max-height: 50vh;
+    }
+    .information{
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+    }
+    .songinfo, .songtime{
+        width: auto;
+    }
+    .timevol{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 13px;
+    }
+}
+
+
